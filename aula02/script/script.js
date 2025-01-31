@@ -1,3 +1,11 @@
-const btn=document.querySelector('#guest-1')
+const input=document.querySelector('input')
+const form=document.querySelector('form')
 
-btn.addEventListener('click',()=>console.log('Test'))
+form.onsubmit=(e)=>{
+        e.preventDefault()
+const value=input.value
+const hasNumber=/\d+/g
+
+if(hasNumber.test(value)) alert('O texto contem números . ')
+else console.log('Enviado!')
+}

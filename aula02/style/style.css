@@ -11,6 +11,7 @@ body{
         padding: 2em;
 }
 
+
 h1,h2{
         color: white;
         margin: 2rem 0;
@@ -29,10 +30,13 @@ form{
                 padding: 1.90em;
                 
                 display: flex;
+                border: 0;
+                outline: 0; 
+                   
+        }
+        
                 
-                border: 0 none;
-                outline: 0;
-                }
+                
 }
 
 
@@ -68,5 +72,13 @@ button{
                 opacity: 0.5;
                 transition: 0.3s ease;
         }
-}
 
+}
+.input-error,.input-error:focus{
+        border-color: #e21a43;
+
+}   
+
+.trocarDecor{
+        background-color: #e21a43;
+}
