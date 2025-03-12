@@ -1,0 +1,18 @@
+form {
+  width: 350px;
+  height: 350px;
+  border: 1px solid;
+  
+
+  label ,input {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding-block: 8px;
+}
+}
+li{
+list-style: none;
+}
