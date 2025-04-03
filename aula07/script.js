@@ -1,27 +1,22 @@
-// rest
-function value(...rest) {
-  console.log(...rest);
-}
-value(1, 2, 3);
+const product = ["Teclado", "Mouse", "Monitor"];
+const pesq = "Mouss";
 
-//spread
+//filtra se á o poduto na lista
 
-const numbers = [1, 2, 3];
-console.log("##### Spread");
-console.log(...numbers);
+const filtrar = product.filter((product) => product.includes(pesq));
 
-const pess = [
-  {
-    nome: "Jean",
-    idade: 23,
-    sexo: "M",
-  },
-  {
-        nome:'Julia',
-        idade:20,
-        sexo:'F',
-        
-  }
+// Verifica se á um produto com o nome da pesquisa
+
+if (filtrar.includes(pesq) == false)
+  console.log("Esse Produto Não Está em estoque.");
+else console.log(`Produto ENCONTRADO: ${filtrar}`);
+
+const products = [
+  { descrition: "teclado", price: 150, promotion: true },
+  { descrition: "Mouse", price: 70, promotion: false},
+  { descrition: "Monitor", price: 900, promotion: true },
 ];
-console.log(pess)
-console.log(...pess)
+//Exemplo de um filtro de produtos na promoção
+
+const promotion=products.filter((promo)=>promo.promotion == true)
+console.log(promotion)
