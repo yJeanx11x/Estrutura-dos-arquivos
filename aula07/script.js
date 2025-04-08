@@ -1,22 +1,20 @@
-const product = ["Teclado", "Mouse", "Monitor"];
-const pesq = "Mouss";
+// métado findIndex()
+const values = [0, 1, 4, 8, 12, 6];
+const index = values.findIndex((value) => value > 4);
+console.log("Com metado findIndex() =", values[index]);
 
-//filtra se á o poduto na lista
+// Métado find()
 
-const filtrar = product.filter((product) => product.includes(pesq));
+const found = values.find((valu) => valu > 10);
+console.log("Com metado find() =", found);
 
-// Verifica se á um produto com o nome da pesquisa
 
-if (filtrar.includes(pesq) == false)
-  console.log("Esse Produto Não Está em estoque.");
-else console.log(`Produto ENCONTRADO: ${filtrar}`);
-
-const products = [
-  { descrition: "teclado", price: 150, promotion: true },
-  { descrition: "Mouse", price: 70, promotion: false},
-  { descrition: "Monitor", price: 900, promotion: true },
+//Exemplo com Objeto
+const fruits = [
+  { name: "apple", quantity: 23 },
+  { name: "banana", quantity: 25 },
+  { name: "orange", quantity: 52 },
 ];
-//Exemplo de um filtro de produtos na promoção
 
-const promotion=products.filter((promo)=>promo.promotion == true)
-console.log(promotion)
+const result = fruits.find((frut) => frut.name === "banana");
+console.log(result)
