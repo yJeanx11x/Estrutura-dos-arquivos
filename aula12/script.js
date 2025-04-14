@@ -37,5 +37,5 @@ const jsCourse1={
   course:'JavaScript',
   students:[...htmlCourse.students,{name:'Souza',email:'souza@gmail.com'}]
 }
-
 console.log(jsCourse1)
+//deep copy
